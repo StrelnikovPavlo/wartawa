@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Информация пользователя (логин)</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230424005553">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<main class="page">
+			<div class="error">
+				<img src="img/404.svg" alt="404">
+				<div class="error__content">
+					<div class="error__title">Страница не найдена!</div>
+					<div class="error__text">Мы обязательно разберёмся с этим недоразумением! А пока
+						можете вернуться на главную, там Вы найдёте всё, что ищите.</div>
+					<a href="#" class="error__link button button-green">На главную</a>
+				</div>
+			</div>
+		</main>
+	</div>
+	<div id="createAdmin" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<form action="#" method="#" class="popup__create create-popup">
+					<button data-close type="button" class="popup__close create-popup__close _icon-close"></button>
+					<div class="create-popup__title">Создать супер администратора</div>
+					<div class="create-popup__content">
+						<div class="create-popup__input">
+							<label for="name" class="create-popup__label">Имя</label>
+							<input data-required type="text" name="name" class="input">
+						</div>
+						<div class="create-popup__input">
+							<label for="email" class="create-popup__label">Email</label>
+							<input data-required type="email" name="email" class="input">
+						</div>
+					</div>
+					<button type="submit" class="create-popup__button button button-green">Создать</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div id="addAdmin" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<form action="#" method="#" class="popup__create create-popup">
+					<button data-close type="button" class="popup__close create-popup__close _icon-close"></button>
+					<div class="create-popup__title">Добавить администратора</div>
+					<div class="create-popup__content">
+						<div class="create-popup__input">
+							<label for="name" class="create-popup__label">Имя</label>
+							<input data-required type="text" name="name" class="input">
+						</div>
+						<div class="create-popup__input">
+							<label for="email" class="create-popup__label">Email</label>
+							<input data-required type="email" name="email" class="input">
+						</div>
+					</div>
+					<button type="submit" class="create-popup__button button button-green">Создать</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div id="refills_swift" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<form action="#" method="#" class="popup__create create-popup">
+					<button data-close type="button" class="popup__close create-popup__close _icon-close"></button>
+					<div class="create-popup__title">Выдать пополнение</div>
+					<div class="create-popup__content">
+						<div class="create-popup__input">
+							<label for="id" class="create-popup__label">ID</label>
+							<input data-required type="text" name="id" class="input">
+						</div>
+						<div class="create-popup__input">
+							<label for="currency" class="create-popup__label">Валюта</label>
+							<select name="currency" class="create-popup__currency">
+								<option data-asset="img/country.png" value="1" selected>USD</option>
+								<option data-asset="img/country.png" value="2" selected>USD</option>
+								<option data-asset="img/country.png" value="3" selected>USD</option>
+								<option data-asset="img/country.png" value="4" selected>USD</option>
+							</select>
+						</div>
+						<div class="create-popup__input">
+							<label for="sum" class="create-popup__label">Cумма</label>
+							<input data-required type="number" name="sum" placeholder="0.00" class="input">
+						</div>
+					</div>
+					<button type="submit" class="create-popup__button button button-green">Создать</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div id="refills_sepa" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<form action="#" method="#" class="popup__create create-popup">
+					<button data-close type="button" class="popup__close create-popup__close _icon-close"></button>
+					<div class="create-popup__title">Выдать пополнение</div>
+					<div class="create-popup__content">
+						<div class="create-popup__input">
+							<label for="id" class="create-popup__label">ID</label>
+							<input data-required type="text" name="id" class="input">
+						</div>
+						<div class="create-popup__input">
+							<label for="currency" class="create-popup__label">Валюта</label>
+							<select name="currency" class="create-popup__currency">
+								<option data-asset="img/country.png" value="1" selected>USD</option>
+								<option data-asset="img/country.png" value="2" selected>USD</option>
+								<option data-asset="img/country.png" value="3" selected>USD</option>
+								<option data-asset="img/country.png" value="4" selected>USD</option>
+							</select>
+						</div>
+						<div class="create-popup__input">
+							<label for="sum" class="create-popup__label">Cумма</label>
+							<input data-required type="number" name="sum" placeholder="0.00" class="input">
+						</div>
+					</div>
+					<button type="submit" class="create-popup__button button button-green">Создать</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="personal_data" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<form action="#" method="#" class="popup__create create-popup">
+					<button data-close type="button" class="popup__close create-popup__close _icon-close"></button>
+					<div class="create-popup__title">Личные данные</div>
+					<div class="create-popup__content">
+						<div class="create-popup__input">
+							<label for="name" class="create-popup__label">Имя</label>
+							<input type="text" name="name" class="input">
+						</div>
+						<div class="create-popup__input">
+							<label for="username" class="create-popup__label">Фамилия</label>
+							<input type="text" name="username" class="input">
+						</div>
+						<div class="create-popup__input">
+							<label for="surname" class="create-popup__label">Отчество</label>
+							<input type="text" name="surname" class="input">
+						</div>
+						<div class="create-popup__input">
+							<label for="phone" class="create-popup__label">Телефон</label>
+							<div class="create-popup__row">
+								<picture><source srcset="img/country.webp" type="image/webp"><img src="img/country.png" alt=""></picture>
+								<input type="number" name="phone" placeholder="+7">
+							</div>
+						</div>
+					</div>
+					<button type="submit" class="create-popup__button button button-green">Сохранить</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="keep_balance" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<form action="#" method="#" class="popup__create create-popup">
+					<button data-close type="button" class="popup__close create-popup__close _icon-close"></button>
+					<div class="create-popup__title">Удержать баланс</div>
+					<div class="create-popup__content">
+						<div class="create-popup__input">
+							<label for="currency" class="create-popup__label">Валюта</label>
+							<select name="currency" class="create-popup__currency">
+								<option data-asset="img/country.png" value="1" selected>USD</option>
+								<option data-asset="img/country.png" value="2" selected>USD</option>
+								<option data-asset="img/country.png" value="3" selected>USD</option>
+								<option data-asset="img/country.png" value="4" selected>USD</option>
+							</select>
+						</div>
+						<div class="create-popup__input">
+							<label for="suma" class="create-popup__label">Удержать сумму</label>
+							<div class="create-popup__row create-popup__row-sum">
+								<div class="create-popup__img">
+									<picture><source srcset="img/country.webp" type="image/webp"><img src="img/country.png" alt=""></picture>
+								</div>
+								<input type="number" name="suma" placeholder="0 USD">
+							</div>
+						</div>
+					</div>
+					<button type="submit" class="create-popup__button button button-green">Сохранить</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div id="add_balance" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<form action="#" method="#" class="popup__create create-popup">
+					<button data-close type="button" class="popup__close create-popup__close _icon-close"></button>
+					<div class="create-popup__title">Добавить баланс</div>
+					<div class="create-popup__content">
+						<div class="create-popup__input">
+							<label for="currency" class="create-popup__label">Валюта</label>
+							<select name="currency" class="create-popup__currency">
+								<option data-asset="img/country.png" value="1" selected>USD</option>
+								<option data-asset="img/country.png" value="2" selected>USD</option>
+								<option data-asset="img/country.png" value="3" selected>USD</option>
+								<option data-asset="img/country.png" value="4" selected>USD</option>
+							</select>
+						</div>
+						<div class="create-popup__input">
+							<label for="suma" class="create-popup__label">Сумма</label>
+							<div class="create-popup__row create-popup__row-sum">
+								<div class="create-popup__img">
+									<picture><source srcset="img/country.webp" type="image/webp"><img src="img/country.png" alt=""></picture>
+								</div>
+								<input type="number" name="suma" placeholder="0 USD">
+							</div>
+						</div>
+					</div>
+					<button type="submit" class="create-popup__button button button-green">Сохранить</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230424005553"></script>
+</body>
+
+</html>

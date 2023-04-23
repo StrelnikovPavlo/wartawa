@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Информация пользователя (логин)</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230424005553">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<main class="page">
+			<aside class="sidebar">
+				<div class="sidebar__logo">
+					<img src="img/logo.svg" alt="logo">
+				</div>
+				<nav class="sidebar__nav nav-sidebar">
+					<ul class="nav-sidebar__list">
+						<li>
+							<div class="_active">
+								<img src="img/icon/admin.svg" alt="">
+								<a href="#">Супер админ</a>
+							</div>
+						</li>
+						<li data-spollers>
+							<div data-spoller>
+								<img src="img/icon/info.svg" alt="">
+								<a href="#">Информация и балансы</a>
+								<span class="_icon-menu-arrow-down"></span>
+							</div>
+							<ul class="nav-sidebar__listdown">
+								<li><a href="#">Пополнения SWIFT</a></li>
+								<li><a href="#">Пополнение SEPA</a></li>
+							</ul>
+						</li>
+						<li>
+							<div>
+								<img src="img/icon/settings.svg" alt="">
+								<a href="#">Настройка системы</a>
+							</div>
+						<li data-spollers>
+							<div data-spoller>
+								<img src="img/icon/users.svg" alt="">
+								<a href="#">Пользователи</a>
+								<span class="_icon-menu-arrow-down"></span>
+							</div>
+							<ul class="nav-sidebar__listdown">
+								<li><a href="#">Заявки на смену Email</a></li>
+								<li><a href="#">Заявки на смену номера телефона</a></li>
+							</ul>
+						</li>
+						<li>
+							<div>
+								<img src="img/icon/operators.svg" alt="">
+								<a href="#">Операторы</a>
+							</div>
+						</li>
+					</ul>
+				</nav>
+				<img src="img/sidebar.svg" alt="" class="sidebar__img">
+			</aside>
+			<section class="body">
+				<header class="header">
+					<div class="header__container">
+						<div class="header__content">
+							<h2 class="header__title">Информация пользователя (логин)</h2>
+							<div class="header__burger"></div>
+						</div>
+						<div class="header__info">
+							<div class="header__user user-header">
+								<div class="user-header__img">
+									<picture><source srcset="img/user.webp" type="image/webp"><img src="img/user.png" alt="Фото"></picture>
+								</div>
+								<div class="user-header__content">
+									<div class="user-header__name">Chris Glasser</div>
+									<div class="user-header__status">Супер администратор</div>
+								</div>
+								<div class="user-header__show _icon-arrow-down"></div>
+							</div>
+							<div class="user-header__menu menu-user">
+								<ul class="menu-user__list">
+									<li><a href="#">
+											<img src="img/icon/password.svg" alt="">
+											<span>Смена пароля</span>
+										</a></li>
+									<li><a href="#">
+											<img src="img/icon/fa.svg" alt="">
+											<span>Двухэтапная аутенфикация (2FA)</span>
+										</a></li>
+								</ul>
+								<button type="submit" class="menu-user__button">Выход</button>
+							</div>
+						</div>
+					</div>
+				</header>
+				<div class="login">
+					<div data-tabs class="login__container">
+						<nav class="login__nav">
+							<ul data-tabs-titles class="login__list">
+								<li data-tabs-title class="_tab-active"><a href="#" class="button">Личные данные</a></li>
+								<li data-tabs-title><a href="#" class="button">История</a></li>
+								<li data-tabs-title><a href="#" class="button">Транзакции</a></li>
+							</ul>
+						</nav>
+						<div data-tabs-body class="login__body">
+							<div data-tabs-item class="login__content">
+								<div class="login__data data-login">
+									<div class="data-login__header">
+										<h3 class="login__title data-login__title">Основная информация</h3>
+										<div class="data-login__actions">
+											<button data-popup="#personal_data" type="button" class="data-login__edit button _icon-edit">Изменить личные данные</button>
+										</div>
+									</div>
+									<div class="data-login__content">
+										<div class="data-login__row">
+											<div class="data-login__label">Имя:</div>
+											<div class="data-login__item">Иван</div>
+										</div>
+										<div class="data-login__row">
+											<div class="data-login__label">Фамилия:</div>
+											<div class="data-login__item">Иванов</div>
+										</div>
+										<div class="data-login__row">
+											<div class="data-login__label">Отчество:</div>
+											<div class="data-login__item">Иванович</div>
+										</div>
+										<div class="data-login__row">
+											<div class="data-login__label">Дата регистрации:</div>
+											<div class="data-login__item">31.01.2023 г.</div>
+										</div>
+										<div class="data-login__row">
+											<div class="data-login__label">Верификация:</div>
+											<div class="data-login__item">Пройдена (31.01.2023)</div>
+										</div>
+										<div class="data-login__row">
+											<div class="data-login__label">E-mail:</div>
+											<div class="data-login__item">ivanov@gmail.com</div>
+										</div>
+										<div class="data-login__row">
+											<div class="data-login__label">Номер телефона:</div>
+											<div class="data-login__item">+7 495 123 45 67</div>
+										</div>
+									</div>
+								</div>
+								<div class="login__balances balances-login">
+									<div class="data-login__header balances-login__header">
+										<h3 class="login__title data-login__title">Балансы</h3>
+										<div class="data-login__actions">
+											<button data-popup="#keep_balance" type="button" class="login__button balances-login__balance button">Удержать баланс</button>
+											<button data-popup="#add_balance" type="button" class="login__button balances-login__add button _icon-add">Добавить баланс</button>
+										</div>
+									</div>
+									<div class="balances-login__content">
+										<div class="login__row balances-login__info">
+											<div class="balances-login__item admin__item"><span>USDT</span><span>100</span></div>
+											<div class="balances-login__item admin__item"><span>USDT</span><span>100</span></div>
+											<div class="balances-login__item admin__item"><span>USDT</span><span>100</span></div>
+											<div class="balances-login__item admin__item"><span>USDT</span><span>100</span></div>
+											<div class="balances-login__item admin__item"><span>USDT</span><span>100</span></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div data-tabs-item class="login__content">
+								<div class="login__history history-login">
+									<div class="data-login__header history-login__header">
+										<h3 class="login__title history-login__title">История</h3>
+									</div>
+									<div class="history-login__content">
+										<div class="login__caption history-login__caption">
+											<div class="history-login__label refills__label">Дата</div>
+											<div class="history-login__label refills__label">Тип операции</div>
+											<div class="history-login__label refills__label">Сумма</div>
+											<div class="history-login__label refills__label">Статус</div>
+										</div>
+										<div class="login__row history-login__row">
+											<div class="history-login__item admin__item">31 января 2023 г.</div>
+											<div class="history-login__item admin__item">Перевод Tether TRC20</div>
+											<div class="history-login__item admin__item">500</div>
+											<div class="history-login__item history-login__item-chek _icon-chek"></div>
+										</div>
+										<div class="login__row history-login__row">
+											<div class="history-login__item admin__item">02 февраля 2023 г.</div>
+											<div class="history-login__item admin__item">Конвертирование Tether TRC20/USD</div>
+											<div class="history-login__item admin__item">1000</div>
+											<div class="history-login__item history-login__item-cansel _icon-cansel"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div data-tabs-item class="login__content">
+								<div class="login__transactions transactions-login">
+									<div class="data-login__header transactions-login__header">
+										<h3 class="login__title transactions-login__title">Транзакции</h3>
+									</div>
+									<div class="transactions-login__content">
+										<div class="login__caption transactions-login__caption">
+											<div class="history-login__label refills__label">Дата</div>
+											<div class="history-login__label refills__label">Тип операции</div>
+											<div class="history-login__label refills__label">Сумма</div>
+											<div class="history-login__label refills__label">Ссылка на транзакцию</div>
+											<div class="history-login__label refills__label">Статус</div>
+										</div>
+										<div class="login__row transactions-login__row">
+											<div class="history-login__item admin__item">31 января 2023 г.</div>
+											<div class="history-login__item admin__item">Перевод Tether TRC20</div>
+											<div class="history-login__item admin__item">500</div>
+											<div class="history-login__item admin__item">32942()</div>
+											<div class="history-login__item history-login__item-chek _icon-chek"></div>
+										</div>
+										<div class="login__row transactions-login__row">
+											<div class="history-login__item admin__item">31 января 2023 г.</div>
+											<div class="history-login__item admin__item">Перевод Tether TRC20</div>
+											<div class="history-login__item admin__item">500</div>
+											<div class="history-login__item admin__item">32942()</div>
+											<div class="history-login__item history-login__item-cansel _icon-cansel"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+	<div id="createAdmin" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<form action="#" method="#" class="popup__create create-popup">
+					<button data-close type="button" class="popup__close create-popup__close _icon-close"></button>
+					<div class="create-popup__title">Создать супер администратора</div>
+					<div class="create-popup__content">
+						<div class="create-popup__input">
+							<label for="name" class="create-popup__label">Имя</label>
+							<input data-required type="text" name="name" class="input">
+						</div>
+						<div class="create-popup__input">
+							<label for="email" class="create-popup__label">Email</label>
+							<input data-required type="email" name="email" class="input">
+						</div>
+					</div>
+					<button type="submit" class="create-popup__button button button-green">Создать</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div id="addAdmin" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<form action="#" method="#" class="popup__create create-popup">
+					<button data-close type="button" class="popup__close create-popup__close _icon-close"></button>
+					<div class="create-popup__title">Добавить администратора</div>
+					<div class="create-popup__content">
+						<div class="create-popup__input">
+							<label for="name" class="create-popup__label">Имя</label>
+							<input data-required type="text" name="name" class="input">
+						</div>
+						<div class="create-popup__input">
+							<label for="email" class="create-popup__label">Email</label>
+							<input data-required type="email" name="email" class="input">
+						</div>
+					</div>
+					<button type="submit" class="create-popup__button button button-green">Создать</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div id="refills_swift" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<form action="#" method="#" class="popup__create create-popup">
+					<button data-close type="button" class="popup__close create-popup__close _icon-close"></button>
+					<div class="create-popup__title">Выдать пополнение</div>
+					<div class="create-popup__content">
+						<div class="create-popup__input">
+							<label for="id" class="create-popup__label">ID</label>
+							<input data-required type="text" name="id" class="input">
+						</div>
+						<div class="create-popup__input">
+							<label for="currency" class="create-popup__label">Валюта</label>
+							<select name="currency" class="create-popup__currency">
+								<option data-asset="img/country.png" value="1" selected>USD</option>
+								<option data-asset="img/country.png" value="2" selected>USD</option>
+								<option data-asset="img/country.png" value="3" selected>USD</option>
+								<option data-asset="img/country.png" value="4" selected>USD</option>
+							</select>
+						</div>
+						<div class="create-popup__input">
+							<label for="sum" class="create-popup__label">Cумма</label>
+							<input data-required type="number" name="sum" placeholder="0.00" class="input">
+						</div>
+					</div>
+					<button type="submit" class="create-popup__button button button-green">Создать</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div id="refills_sepa" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<form action="#" method="#" class="popup__create create-popup">
+					<button data-close type="button" class="popup__close create-popup__close _icon-close"></button>
+					<div class="create-popup__title">Выдать пополнение</div>
+					<div class="create-popup__content">
+						<div class="create-popup__input">
+							<label for="id" class="create-popup__label">ID</label>
+							<input data-required type="text" name="id" class="input">
+						</div>
+						<div class="create-popup__input">
+							<label for="currency" class="create-popup__label">Валюта</label>
+							<select name="currency" class="create-popup__currency">
+								<option data-asset="img/country.png" value="1" selected>USD</option>
+								<option data-asset="img/country.png" value="2" selected>USD</option>
+								<option data-asset="img/country.png" value="3" selected>USD</option>
+								<option data-asset="img/country.png" value="4" selected>USD</option>
+							</select>
+						</div>
+						<div class="create-popup__input">
+							<label for="sum" class="create-popup__label">Cумма</label>
+							<input data-required type="number" name="sum" placeholder="0.00" class="input">
+						</div>
+					</div>
+					<button type="submit" class="create-popup__button button button-green">Создать</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="personal_data" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<form action="#" method="#" class="popup__create create-popup">
+					<button data-close type="button" class="popup__close create-popup__close _icon-close"></button>
+					<div class="create-popup__title">Личные данные</div>
+					<div class="create-popup__content">
+						<div class="create-popup__input">
+							<label for="name" class="create-popup__label">Имя</label>
+							<input type="text" name="name" class="input">
+						</div>
+						<div class="create-popup__input">
+							<label for="username" class="create-popup__label">Фамилия</label>
+							<input type="text" name="username" class="input">
+						</div>
+						<div class="create-popup__input">
+							<label for="surname" class="create-popup__label">Отчество</label>
+							<input type="text" name="surname" class="input">
+						</div>
+						<div class="create-popup__input">
+							<label for="phone" class="create-popup__label">Телефон</label>
+							<div class="create-popup__row">
+								<picture><source srcset="img/country.webp" type="image/webp"><img src="img/country.png" alt=""></picture>
+								<input type="number" name="phone" placeholder="+7">
+							</div>
+						</div>
+					</div>
+					<button type="submit" class="create-popup__button button button-green">Сохранить</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="keep_balance" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<form action="#" method="#" class="popup__create create-popup">
+					<button data-close type="button" class="popup__close create-popup__close _icon-close"></button>
+					<div class="create-popup__title">Удержать баланс</div>
+					<div class="create-popup__content">
+						<div class="create-popup__input">
+							<label for="currency" class="create-popup__label">Валюта</label>
+							<select name="currency" class="create-popup__currency">
+								<option data-asset="img/country.png" value="1" selected>USD</option>
+								<option data-asset="img/country.png" value="2" selected>USD</option>
+								<option data-asset="img/country.png" value="3" selected>USD</option>
+								<option data-asset="img/country.png" value="4" selected>USD</option>
+							</select>
+						</div>
+						<div class="create-popup__input">
+							<label for="suma" class="create-popup__label">Удержать сумму</label>
+							<div class="create-popup__row create-popup__row-sum">
+								<div class="create-popup__img">
+									<picture><source srcset="img/country.webp" type="image/webp"><img src="img/country.png" alt=""></picture>
+								</div>
+								<input type="number" name="suma" placeholder="0 USD">
+							</div>
+						</div>
+					</div>
+					<button type="submit" class="create-popup__button button button-green">Сохранить</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div id="add_balance" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<form action="#" method="#" class="popup__create create-popup">
+					<button data-close type="button" class="popup__close create-popup__close _icon-close"></button>
+					<div class="create-popup__title">Добавить баланс</div>
+					<div class="create-popup__content">
+						<div class="create-popup__input">
+							<label for="currency" class="create-popup__label">Валюта</label>
+							<select name="currency" class="create-popup__currency">
+								<option data-asset="img/country.png" value="1" selected>USD</option>
+								<option data-asset="img/country.png" value="2" selected>USD</option>
+								<option data-asset="img/country.png" value="3" selected>USD</option>
+								<option data-asset="img/country.png" value="4" selected>USD</option>
+							</select>
+						</div>
+						<div class="create-popup__input">
+							<label for="suma" class="create-popup__label">Сумма</label>
+							<div class="create-popup__row create-popup__row-sum">
+								<div class="create-popup__img">
+									<picture><source srcset="img/country.webp" type="image/webp"><img src="img/country.png" alt=""></picture>
+								</div>
+								<input type="number" name="suma" placeholder="0 USD">
+							</div>
+						</div>
+					</div>
+					<button type="submit" class="create-popup__button button button-green">Сохранить</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230424005553"></script>
+</body>
+
+</html>
