@@ -2916,11 +2916,26 @@ PERFORMANCE OF THIS SOFTWARE.
         }));
         modules_flsModules.gallery = galleyItems;
     }
-    const menuShow = document.querySelector(".user-header__show");
+    const menuShow = document.querySelector(".user-header__body");
     const menuBody = document.querySelector(".menu-user");
     if (menuShow && menuBody) menuShow.addEventListener("click", (() => {
         menuBody.classList.toggle("_show");
     }));
+    const sideBar = document.querySelectorAll(".sidebar");
+    for (let i = 0; i < sideBar.length; i++) {
+        const arrowDown1 = document.querySelector(".nav-sidebar__down-1");
+        const arrowDown2 = document.querySelector(".nav-sidebar__down-2");
+        const menuDown1 = document.querySelector(".nav-sidebar__listdown-1");
+        const menuDown2 = document.querySelector(".nav-sidebar__listdown-2");
+        _slideUp(menuDown1);
+        _slideUp(menuDown2);
+        arrowDown1.addEventListener("click", (() => {
+            _slideToggle(menuDown1);
+        }));
+        arrowDown2.addEventListener("click", (() => {
+            _slideToggle(menuDown2);
+        }));
+    }
     window["FLS"] = true;
     isWebp();
     spollers();

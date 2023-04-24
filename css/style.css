@@ -1023,8 +1023,15 @@ body::after {
 }
 
 .nav-sidebar__list li div span {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   cursor: pointer;
+  padding-left: 10px;
+  min-height: 20px;
 }
 
 .nav-sidebar__list li div span::before {
@@ -1114,6 +1121,16 @@ body::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.user-header__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
 }
 
 .user-header__img {
